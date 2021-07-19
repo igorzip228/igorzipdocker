@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="8" failed="0" ignored="0" total="8" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite_Duck_Duck" duration-ms="479" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+    <groups>
+    </groups>
+    <test name="DuckDuckTest-4" duration-ms="465" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+      <class name="duckDuck_tests.DuckDuckTests">
+        <test-method status="FAIL" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:duckDuck_tests.DuckDuckTests@3c0f93f1]" name="beforeTest" is-config="true" duration-ms="454" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5a1a1bb7]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at base_class.BaseTestClass.beforeTest(BaseTestClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:607)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="findResults(java.lang.String)[pri:1, instance:duckDuck_tests.DuckDuckTests@3c0f93f1]" name="findResults" duration-ms="0" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at base_class.BaseTestClass.beforeTest(BaseTestClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:607)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findResults -->
+        <test-method status="SKIP" signature="checkNumOfVideous()[pri:2, instance:duckDuck_tests.DuckDuckTests@3c0f93f1]" name="checkNumOfVideous" duration-ms="0" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at base_class.BaseTestClass.beforeTest(BaseTestClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:607)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNumOfVideous -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:duckDuck_tests.DuckDuckTests@3c0f93f1]" name="afterTest" is-config="true" duration-ms="-1622580033737" started-at="2021-06-01T20:40:33 UTC" finished-at="1970-01-01T00:00:00 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- duckDuck_tests.DuckDuckTests -->
+    </test> <!-- DuckDuckTest-4 -->
+    <test name="DuckDuckTest-1" duration-ms="472" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+      <class name="duckDuck_tests.DuckDuckTests">
+        <test-method status="FAIL" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:duckDuck_tests.DuckDuckTests@598067a5]" name="beforeTest" is-config="true" duration-ms="449" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@24019258]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at base_class.BaseTestClass.beforeTest(BaseTestClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:607)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="findResults(java.lang.String)[pri:1, instance:duckDuck_tests.DuckDuckTests@598067a5]" name="findResults" duration-ms="0" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Selenium]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at base_class.BaseTestClass.beforeTest(BaseTestClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:607)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findResults -->
+        <test-method status="SKIP" signature="checkNumOfVideous()[pri:2, instance:duckDuck_tests.DuckDuckTests@598067a5]" name="checkNumOfVideous" duration-ms="0" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at base_class.BaseTestClass.beforeTest(BaseTestClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:607)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNumOfVideous -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:duckDuck_tests.DuckDuckTests@598067a5]" name="afterTest" is-config="true" duration-ms="-1622580033735" started-at="2021-06-01T20:40:33 UTC" finished-at="1970-01-01T00:00:00 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- duckDuck_tests.DuckDuckTests -->
+    </test> <!-- DuckDuckTest-1 -->
+    <test name="DuckDuckTest-2" duration-ms="466" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+      <class name="duckDuck_tests.DuckDuckTests">
+        <test-method status="FAIL" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:duckDuck_tests.DuckDuckTests@148080bb]" name="beforeTest" is-config="true" duration-ms="445" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2331f1ae]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at base_class.BaseTestClass.beforeTest(BaseTestClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:607)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="checkNumOfVideous()[pri:2, instance:duckDuck_tests.DuckDuckTests@148080bb]" name="checkNumOfVideous" duration-ms="0" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at base_class.BaseTestClass.beforeTest(BaseTestClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:607)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNumOfVideous -->
+        <test-method status="SKIP" signature="findResults(java.lang.String)[pri:1, instance:duckDuck_tests.DuckDuckTests@148080bb]" name="findResults" duration-ms="0" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testng]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at base_class.BaseTestClass.beforeTest(BaseTestClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:607)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findResults -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:duckDuck_tests.DuckDuckTests@148080bb]" name="afterTest" is-config="true" duration-ms="-1622580033735" started-at="2021-06-01T20:40:33 UTC" finished-at="1970-01-01T00:00:00 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- duckDuck_tests.DuckDuckTests -->
+    </test> <!-- DuckDuckTest-2 -->
+    <test name="DuckDuckTest-3" duration-ms="472" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+      <class name="duckDuck_tests.DuckDuckTests">
+        <test-method status="FAIL" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:duckDuck_tests.DuckDuckTests@7e0b0338]" name="beforeTest" is-config="true" duration-ms="444" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@703b681e]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at base_class.BaseTestClass.beforeTest(BaseTestClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:607)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="findResults(java.lang.String)[pri:1, instance:duckDuck_tests.DuckDuckTests@7e0b0338]" name="findResults" duration-ms="0" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at base_class.BaseTestClass.beforeTest(BaseTestClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:607)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findResults -->
+        <test-method status="SKIP" signature="checkNumOfVideous()[pri:2, instance:duckDuck_tests.DuckDuckTests@7e0b0338]" name="checkNumOfVideous" duration-ms="1" started-at="2021-06-01T20:40:33 UTC" finished-at="2021-06-01T20:40:33 UTC">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '08a611ae9c32', ip: '172.17.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at base_class.BaseTestClass.beforeTest(BaseTestClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:607)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNumOfVideous -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:duckDuck_tests.DuckDuckTests@7e0b0338]" name="afterTest" is-config="true" duration-ms="-1622580033740" started-at="2021-06-01T20:40:33 UTC" finished-at="1970-01-01T00:00:00 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- duckDuck_tests.DuckDuckTests -->
+    </test> <!-- DuckDuckTest-3 -->
+  </suite> <!-- Suite_Duck_Duck -->
+</testng-results>

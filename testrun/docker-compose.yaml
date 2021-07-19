@@ -1,0 +1,52 @@
+version: "3"
+services:
+  hub:
+    image: selenium/hub:3.14
+    ports:
+      - "4444:4444"
+  chrome:
+    image: selenium/node-chrome:3.14
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+  firefox:
+    image: selenium/node-firefox:3.14
+    shm_size: '1gb'
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+  duck_duck_test1:
+    image: zipdocker2/selenium-docker
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=chrome
+      - HUB_HOST=hub
+      - MODULE=duck_duck_test.xml
+    volumes:
+      - ./duck_duck_result1:/usr/share/docker_study/test-output
+  wiki_test:
+    image: zipdocker2/selenium-docker
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - HUB_HOST-hub
+      - BROWSER=chrome
+      - MODULE=wiki_test.xml
+    volumes:
+      - ./wiki-result2:/usr/share/docker_study/test-output
+  duck_duck_test2:
+    image: zipdocker2/selenium-docker
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=firefox
+      - HUB_HOST=hub
+      - MODULE=duck_duck_test.xml
+    volumes:
+      - ./duck_duck_result:/usr/share/docker_study/test-output

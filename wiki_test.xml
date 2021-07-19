@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite_Wikipedia" verbose="1" >
+    <test name="Nopackage" >
+        <parameter name="searchWord" value="Selenium"></parameter>
+        <classes>
+            <class name="wiki_tests.WikiTests" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite_Duck_Duck" duration-ms="41315" started-at="2021-06-03T20:38:43 UTC" finished-at="2021-06-03T20:39:25 UTC">
+    <groups>
+    </groups>
+    <test name="DuckDuckTest-1" duration-ms="41315" started-at="2021-06-03T20:38:43 UTC" finished-at="2021-06-03T20:39:25 UTC">
+      <class name="duckDuck_tests.DuckDuckTests">
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:duckDuck_tests.DuckDuckTests@598067a5]" name="beforeTest" is-config="true" duration-ms="18583" started-at="2021-06-03T20:38:43 UTC" finished-at="2021-06-03T20:39:02 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1c3a4799]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="findResults(java.lang.String)[pri:1, instance:duckDuck_tests.DuckDuckTests@598067a5]" name="findResults" duration-ms="17932" started-at="2021-06-03T20:39:02 UTC" finished-at="2021-06-03T20:39:20 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Selenium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findResults -->
+        <test-method status="PASS" signature="checkNumOfVideous()[pri:2, instance:duckDuck_tests.DuckDuckTests@598067a5]" name="checkNumOfVideous" duration-ms="3581" started-at="2021-06-03T20:39:20 UTC" finished-at="2021-06-03T20:39:24 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNumOfVideous -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:duckDuck_tests.DuckDuckTests@598067a5]" name="afterTest" is-config="true" duration-ms="1052" started-at="2021-06-03T20:39:24 UTC" finished-at="2021-06-03T20:39:25 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- duckDuck_tests.DuckDuckTests -->
+    </test> <!-- DuckDuckTest-1 -->
+    <test name="DuckDuckTest-2" duration-ms="41315" started-at="2021-06-03T20:38:43 UTC" finished-at="2021-06-03T20:39:25 UTC">
+      <class name="duckDuck_tests.DuckDuckTests">
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:duckDuck_tests.DuckDuckTests@148080bb]" name="beforeTest" is-config="true" duration-ms="18577" started-at="2021-06-03T20:38:43 UTC" finished-at="2021-06-03T20:39:02 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@131276c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="findResults(java.lang.String)[pri:1, instance:duckDuck_tests.DuckDuckTests@148080bb]" name="findResults" duration-ms="15531" started-at="2021-06-03T20:39:02 UTC" finished-at="2021-06-03T20:39:18 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testng]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findResults -->
+        <test-method status="PASS" signature="checkNumOfVideous()[pri:2, instance:duckDuck_tests.DuckDuckTests@148080bb]" name="checkNumOfVideous" duration-ms="5577" started-at="2021-06-03T20:39:18 UTC" finished-at="2021-06-03T20:39:23 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNumOfVideous -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:duckDuck_tests.DuckDuckTests@148080bb]" name="afterTest" is-config="true" duration-ms="1479" started-at="2021-06-03T20:39:23 UTC" finished-at="2021-06-03T20:39:25 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- duckDuck_tests.DuckDuckTests -->
+    </test> <!-- DuckDuckTest-2 -->
+    <test name="DuckDuckTest-4" duration-ms="41308" started-at="2021-06-03T20:38:43 UTC" finished-at="2021-06-03T20:39:25 UTC">
+      <class name="duckDuck_tests.DuckDuckTests">
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:duckDuck_tests.DuckDuckTests@3c0f93f1]" name="beforeTest" is-config="true" duration-ms="18568" started-at="2021-06-03T20:38:43 UTC" finished-at="2021-06-03T20:39:02 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3fd7a715]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="findResults(java.lang.String)[pri:1, instance:duckDuck_tests.DuckDuckTests@3c0f93f1]" name="findResults" duration-ms="16276" started-at="2021-06-03T20:39:02 UTC" finished-at="2021-06-03T20:39:18 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findResults -->
+        <test-method status="PASS" signature="checkNumOfVideous()[pri:2, instance:duckDuck_tests.DuckDuckTests@3c0f93f1]" name="checkNumOfVideous" duration-ms="5070" started-at="2021-06-03T20:39:18 UTC" finished-at="2021-06-03T20:39:23 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNumOfVideous -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:duckDuck_tests.DuckDuckTests@3c0f93f1]" name="afterTest" is-config="true" duration-ms="1290" started-at="2021-06-03T20:39:23 UTC" finished-at="2021-06-03T20:39:25 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- duckDuck_tests.DuckDuckTests -->
+    </test> <!-- DuckDuckTest-4 -->
+    <test name="DuckDuckTest-3" duration-ms="41313" started-at="2021-06-03T20:38:43 UTC" finished-at="2021-06-03T20:39:25 UTC">
+      <class name="duckDuck_tests.DuckDuckTests">
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:duckDuck_tests.DuckDuckTests@7e0b0338]" name="beforeTest" is-config="true" duration-ms="18569" started-at="2021-06-03T20:38:43 UTC" finished-at="2021-06-03T20:39:02 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@26aa12dd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="findResults(java.lang.String)[pri:1, instance:duckDuck_tests.DuckDuckTests@7e0b0338]" name="findResults" duration-ms="16885" started-at="2021-06-03T20:39:02 UTC" finished-at="2021-06-03T20:39:19 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findResults -->
+        <test-method status="PASS" signature="checkNumOfVideous()[pri:2, instance:duckDuck_tests.DuckDuckTests@7e0b0338]" name="checkNumOfVideous" duration-ms="4447" started-at="2021-06-03T20:39:19 UTC" finished-at="2021-06-03T20:39:23 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNumOfVideous -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:duckDuck_tests.DuckDuckTests@7e0b0338]" name="afterTest" is-config="true" duration-ms="1292" started-at="2021-06-03T20:39:23 UTC" finished-at="2021-06-03T20:39:25 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- duckDuck_tests.DuckDuckTests -->
+    </test> <!-- DuckDuckTest-3 -->
+  </suite> <!-- Suite_Duck_Duck -->
+</testng-results>
